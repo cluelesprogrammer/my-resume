@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+:root {
+    --skills-sub-div-color : rgba(196, 218, 211, 0.15);
+    --skills-div-color: rgba(76, 107, 47, 0.75);   
+    --background-lists : rgb(173, 173, 148);
+    --background-li : rgba(0,128,0, 0.25);
+    --exp-color: rgba(88, 141, 161, 0.65);
+    --implementation-back-color: rgba(206, 226, 220, 0.8);
+    font-size: 14px;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    max-width: 960px;
+    font-family: Poppins;
+    max-width: 1020px;
     margin: auto;
 }
 
@@ -10,12 +21,22 @@ h1 {
     letter-spacing: .6em;
     padding-top: 1em;
     padding-bottom: 1em;
+    font-weight: 600;
+}
+
+h1.section-heading {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-bottom: 1em;
+    
 }
+
 
 main { 
     display: grid;
@@ -29,7 +50,7 @@ header {
 }
 
 section {
-    margin: auto 1em 4em 2em;
+    margin: auto 1em 2em 2em;
 }
 
 i {
@@ -37,6 +58,7 @@ i {
 }
 
 p {
+    position: relative;
     margin: .2em auto
 }
 
@@ -49,4 +71,248 @@ hr {
 h1, h2 {
     font-weight: 100;
     margin-bottom: 0;
+    margin-top: 0em;
 }
+
+#spoken {
+    font-size: 1em;
+    padding-top: 1em;
+}
+/*
+.border-fill-div{
+    position: relative;
+    border: 0.18em solid;
+    border-radius: 10px;
+    background-color: var(--skills-div-color);
+    padding: 0.2em;
+    color: white;
+}
+
+
+.programming-list {
+    border: 0.18em solid;
+    border-radius: 13px;
+    list-style: none;
+   
+    position: relative;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+*/
+
+.section-entries {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.18em solid;
+    border-radius: 13px;
+    background-color: var(--background-lists);
+    padding: 0.5em;
+}
+
+.section-entries {
+    gap: 1em;
+}
+
+.about {
+    flex-direction: row;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+.photo > img{
+    border: 2px solid;
+}
+
+
+.flex-columns  {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.18em solid;
+    border-radius: 13px;
+    background-color: var(--background-lists);
+    padding: 0.5em;
+    font-size: 0.75em;
+}
+
+.work > .institution::before {
+    content: 'Place of work: ';
+    font-weight: 600;
+}
+.work > .duration::before {
+    content: 'Duration: ';
+    font-weight: 600;
+}
+.work > .description::before {
+    content: 'Place of work: ';
+    font-weight: 600;
+}
+
+.languages {
+    font-size: 0.9rem;
+}
+
+.entry {
+    position: relative;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    transition-property: top, left;
+    transition-duration: 1s;
+}
+
+.education {
+    margin: 1em;
+}
+
+.entry > p, .interested > ul {
+    background-color: var(--background-li);
+    border-radius: 0.5em;
+    padding: .4em;
+    list-style: none;
+}
+
+.interested>ul>li::first-letter {
+    font-size: 1.5em;
+}
+
+
+.education-work-description > * {
+    margin-top: 0.5em;
+}
+
+.education-work-description {
+    border-radius: 1em;
+    padding: 0.3em;
+    margin-top: 0.4em;
+    background: var(--background-li);
+}
+
+.entry > *  {
+    margin-left: 3em;
+}
+
+.entry::before {
+    content : '>';
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: max(7%, 2em);
+    height: 2em;
+    top: min(10%, 1.2em);
+    border-radius: 0.5em;
+    background-color: var(--background-li); 
+    display: grid;
+    align-items: center;
+}
+
+.implementation, .thesis {
+    position: absolute;
+    left: -1000em;
+}
+
+.entry:hover > .implementation, .education-description:hover>.thesis {
+    background-color: var(--implementation-back-color);
+    padding: 0.2em;
+    color: black;
+    position: relative;
+    font-weight: 500;
+    border-radius: 0.5em;
+    left: 0em;
+    word-break: break-all;
+}
+
+a {
+    word-break: break-all;
+    font-size: 0.8em;
+}
+
+/*
+.programming-list > li {
+    margin-bottom: 0.7em;
+    background-color: var(--background-li);
+    border-radius: 1em;
+    position: relative;
+}
+.programming-list > li > p {
+    padding: 0.5em;
+}
+
+.programming-list > li::before {
+    content : '>';
+    position: absolute;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 9%;
+    height: 2em;
+    margin-left: -3em;
+    border-radius: 0.5em;
+    display:inline-block;
+    background-color: var(--background-li); 
+}
+
+.programming-list > li:hover {
+    background-color: var(--background-li);
+    transition-duration: 1000ms;
+}
+
+.programming-list > li:hover > .bachelor-project {
+    display: block;
+    background-color: var(--exp-color);
+    padding: 0.2em;
+    color: black;
+    font-weight: 500;
+    border-radius: 0.5em;
+}
+
+.border-fill-div {
+    position: relative;
+    border: 0.18em solid;
+    border-radius: 10px;
+}
+
+.border-fill-div::before {
+    content : '';
+    width: 10%;
+    height: 100%;
+    position: relative;
+    display:inline-block;
+    background-color: rgb(204, 24, 24);
+}
+
+
+
+
+
+.dance-app {
+    display: none;
+}
+
+.web-dev:hover > .dance-app {
+    display: block;
+    background-color: rgba(182, 216, 205, 0.8);
+    border-radius: 0.5em;
+    padding: 0.2em;
+    color: black;
+}
+
+.spoken-languages > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5em 2em 2em 2em;
+    line-height: 1.;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
