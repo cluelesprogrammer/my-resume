@@ -8,12 +8,12 @@
     --exp-color: rgba(88, 141, 161, 0.65);
     -webkit-print-color-adjust: exact; 
     --implementation-back-color: rgba(206, 226, 220, 0.8);
-    font-size: 13px;
+    font-size: 10px;
 }
 
 body {
     font-family: Poppins;
-    max-width: 960px;
+    max-width: 1020px;
     margin: auto;
 }
 
@@ -30,6 +30,10 @@ h1.section-heading {
     letter-spacing: 0.1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+.lang-form {
+    float: right;
 }
 
 h2 {
@@ -80,27 +84,6 @@ h1, h2 {
     font-size: 1em;
     padding-top: 1em;
 }
-/*
-.border-fill-div{
-    position: relative;
-    border: 0.18em solid;
-    border-radius: 10px;
-    background-color: var(--skills-div-color);
-    padding: 0.2em;
-    color: white;
-}
-
-
-.programming-list {
-    border: 0.18em solid;
-    border-radius: 13px;
-    list-style: none;
-   
-    position: relative;
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
-*/
 
 .section-entries {
     display: flex;
