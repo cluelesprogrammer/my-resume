@@ -1,5 +1,13 @@
-function change(){
-    alert('this');
+const langform = document.getElementById("lang-form");
+langform.onsubmit = function() {
+    console.log('submitted');
 }
 
-langform = document.getElementById("lang-form");
+function changelang() {
+    langval = document.getElementById('select-lang');
+    lang = langval.value;
+    console.log(lang);
+}
+
+console.log('this');
+    
