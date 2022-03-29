@@ -188,7 +188,7 @@ h1, h2 {
     position: absolute;
     color: white;
     text-align: center;
-    width: max(7%, 2em);
+    width: max(5%, 2.5em);
     height: 2em;
     top: min(10%, 1.2em);
     border-radius: 0.5em;
