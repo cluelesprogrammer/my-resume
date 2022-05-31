@@ -3,22 +3,26 @@
 		<link href="style.css" rel="stylesheet">
 		<title>Sandesh Baral Resume</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	
 	</head>
 
 	<body>
+		
+	
 		<header id="header">
 			<!-- resume header with your name and title -->
-			<h1><b>SANDESH</b> BARAL</h1>
-			<hr>
-			B.Sc in Informatik
-			<hr>
-		
+			<h1><b>SANDESH BARAL </b></h1>
+			
+			<button id="switch-lang">Switch to <span id="language"><a href="#en">English</a>
+			<a href="#de">Deutsch</a>
+			</span> </button> </article>
 		</header>
 		<main>
+		
 			<article id="mainLeft">
 				<section>
-					<h2>KONTAKT</h2>
+					<h2 id="contact">KONTAKT</h2>
 					<div class="section-entries">
 						<p>
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -33,19 +37,28 @@
 
 				
 				<section>
-					<h2>ÜBER MICH</h2>
+					<h2 id="personal-header">ÜBER MICH</h2>
 					<div class="section-entries about">
 						<div>
-							<h3>Mein Zeil im Moment</h3>
+							<h3 id="personal-details-header">Personliche Angaben</h3>
 							<div class="entry">
-								<p>Ich freue mich darauf, an Orten zu arbeiten, an denen ich lernen, wachsen und mich beruflich selbst finden kann </p>
+								<p>
+									<span id="born-details" class="personal-details"> <b>Geboren</b>: June 11 1994 in Nepal</span> <br>
+									<span id="living-details" class="personal-details">In Deutschland seit 2015</span>     
+								</p>
+								
+								
 							</div>
-							<h3>Interesse an</h3>
+							<h3 id="destination-header">Mein Zeil im Moment</h3>
+							<div class="entry">
+								<p id="destination-answer">Ich freue mich darauf, an Orten zu arbeiten, an denen ich lernen, wachsen und mich beruflich selbst finden kann </p>
+							</div>
+							<h3 id="interests-header">Interesse an</h3>
 							<div class="entry interested">
 								<ul>
-									<li>> Entwicklung von Webapps, insbesondere Design</li>
-									<li>> Computer Vision, Machine Learning und DeepLearning</li>
-									<li>> Musik, Kunst and Philosophie</li>
+									<li id="interest-1"> Entwicklung von Webapps, insbesondere Design</li>
+									<li> Computer Vision, Machine Learning und DeepLearning</li>
+									<li id="interest-2"> Musik, Kunst and Philosophie</li>
 								</ul>
 							</div>
 							
@@ -62,13 +75,13 @@
 				
 				<section class="skills">
 					<h1 class="section-heading">SKILLS</h1>
-						<h2>Programmierung</h2>
+						<h2 id="programming">Programmierung</h2>
 
 						<div class="section-entries">
 							<div class="entry">
-								<p>Data Science: Python Bibliotheken wie Pytorch, Numpy, Matplotlib, Scipy</p>
+								<p id="data-science-langs" >Data Science: Python Bibliotheken wie Pytorch, Numpy, Matplotlib, Scipy</p>
 								<div class="implementation">
-									Siehe mein Bachelor-Projekt unter <a href ="https://github.com/cluelesprogrammer/Dance_project"> https://github.com/cluelesprogrammer/Dance_project </a>
+									<span id="Bachelor-thesis-link">Siehe mein Bachelor-Projekt unter</span> <a href ="https://github.com/cluelesprogrammer/Dance_project"> https://github.com/cluelesprogrammer/Dance_project </a>
 								</div>
 							</div>
 							<div class="entry">
@@ -127,11 +140,7 @@
 						
 						
 					</div>	
-				</section>			
-			</article>
-			<article id="mainRight">
-				<!--
-				-->
+				</section>	
 
 				<section>
 					
@@ -158,11 +167,24 @@
 								<p class="thesis">Bachelorarbeit: Training eines CNN-basierten Modells zur Extraktion von Körperteile aus Tanzposen,  </p>
 							</div>
 						</div>
+						
+
+						<div class="entry education-work">
+							<h3>Master in Informatik</h3>
+							<div class="education-work-description">
+								<p class="institution"><b>Universität: </b>Technische Universität Berlin</p>
+								<p class="duration"><b>Dauer: </b>2022-</p>
+							</div>
+						</div>
 					</div>
 					
-				</section>  
-
-
+				</section> 
+				
+				
+			</article>
+			<article id="mainRight">
+				<!--
+				-->
 				<section>
 					<h1 class="section-heading">ARBEITSERFAHFRUNG</h1>
 					<!-- your work experience -->
@@ -191,14 +213,11 @@
 								<div class="description">  CSS, HTML und JS, meistens Frontent work</div>
 							</div>
 						</div>
-					</div>				
-                
-					
+					</div>	
 				</section>
 
 				<section class="projects">
 					<h2>Projects</h2>
-
 					<div class="section-entries">
 						<div class="entry">
 								<h3>Bachelorarbeit-projekt in Computer Vision und DeepLearning </h3>
@@ -207,10 +226,7 @@
 									<div class="implementation-details">Sprache und Libraries benutzt: Python, Pytorch, Numpy, OpenCV, PIL, Matplotlib</div>
 									<div class="imp-url"> Source Code <a href=" https://github.com/cluelesprogrammer/Dance_project"> https://github.com/cluelesprogrammer/Dance_project</a></div>
 								</div>
-						</div>
-
-						<!-- 
-							
+						</div>	
 						<div class="entry">
 							<h3>Eine Webapp, die das oben genannte Bachelorarbeitsmodell verwendet </h3>
 								<div class="education-work-description">
@@ -219,15 +235,38 @@
 									<div class="imp-url">Source Code: <a href="https://cluelesprogrammer.github.io/MotionArt/">https://cluelesprogrammer.github.io/MotionArt/</a></div>
 								</div>
 						</div>
-
-						-->
 					</div>
+				</section>
 
 				
-
-				</section>
 			</article>
 		</main>
+		
+		<script>
+			
+			$lang = "English"
+			$('p[lang="de"]').hide();
+			$('#language').text("German");
+
+			$( "#switch-lang" ).click ( function() {
+				
+				if ($lang == 'English') {
+					$('p[lang="en"]').hide();
+					$('p[lang="de"]').show();
+					break;
+				}
+				
+
+				if ($lang == "German") {
+					$('p[lang="en"]').hide();
+					$('p[lang="de"]').show();
+					break;
+				}}
+				
+			} alert('this is good'));
+
+
+		</script>
 	</body>
-	<script type="text/javascript" src="main.js"></script>
+	
 </html>

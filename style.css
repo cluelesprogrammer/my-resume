@@ -60,6 +60,11 @@ section {
     border-radius: 1em;
 }
 
+#switch-lang {
+    background-color: rgb(176, 228, 176);
+    border-radius: 0.4em;
+}
+
 
 i {
     margin-right: .5em;
@@ -96,6 +101,12 @@ h1, h2 {
     background-color: var(--background-lists);
     padding: 0.5em;
 }
+
+.personal-details{
+   font-size: 1.1em;
+}
+
+
 
 .other-competencies {
     margin-top: 2em;
@@ -138,6 +149,9 @@ h1, h2 {
     content: 'Beschreibung: ';
     font-weight: 600;
 }
+
+
+
 
 .languages {
     font-size: 0.9rem;
